@@ -1,25 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example Website</title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="./css/components/navbar.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="icon">
-            <img src="./images/Sample_User_Icon.png" class="invert" alt="Icon">
-        </div>
-        <div class="buttons">
-            <button>Home</button>
-            <button>About</button>
-            <button>Contact</button>
-        </div>
+      <div class="icon">
+        <img src="./images/icons/logo_dev.svg" alt="Icon" />
+        <h3>Alejandro Suarez</h3>
+      </div>
+      <div class="buttons">
+        <a href="#" class="active">HOME</a>
+        <a href="pages/about.html">ABOUT</a>
+        <a href="pages/experience.html">EXPERIENCE</a>
+        <a href="pages/projects.html">PROJECTS</a>
+        <a class="profile-icon" href="#"
+          ><img src="./images/portraits/me.jpg" alt="Icon"
+        /></a>
+      </div>
+      <img class="menu-hamburger" src="./images/icons/menu.svg" alt="" />
     </nav>
+    <header>
+      <div>
+        <div class="available-work">
+          <span class="heartbeat">•</span> Available to work
+        </div>
+        <h1 class="i-am">Hi, I'm <span>Alex!</span></h1>
+        <p>
+          A Passionate Full-Stack Developer specializing in building
+          high-performance web applications and exceptional digital experiences.
+        </p>
+        <div class="header-buttons">
+          <button class="my-work-btn">View My Work</button>
+          <button class="contact-btn">Let's talk</button>
+        </div>
+      </div>
+      <figure>
+        <img
+          src="./images/portraits/me-smiling.jpg"
+          alt="Alex giving a big smile"
+        />
+      </figure>
+    </header>
     <main>
-        <h1>This is an example website</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+      <hr>
+      <section class="about-me">
+        <div class="metrics">
+          <div>
+            <p class="number-metric">+2</p>
+            <p class="metric-text">Years Experience</p>
+          </div>
+          <div>
+            <p class="number-metric-white">4</p>
+            <p class="metric-text">Projects Completed</p>
+          </div>
+          <div>
+            <p class="number-metric-white">3</p>
+            <p class="metric-text">Awards Won</p>
+          </div>
+          <div>
+            <p class="number-metric">100%</p>
+            <p class="metric-text">Client Satisfaction</p>
+          </div>
+        </div>
+        <div class="about-info">
+          <h2>About Me</h2>
+          <h3>
+            Crafting scalable digital solutions with a human- centric approach
+          </h3>
+          <p>
+            I am a dedicated Full-Stack Developer with a passion for building
+            scalable web applications and elegant user experiences. With a
+            background in computer science and years of hands-on experience, I
+            thrive on solving complex problems.
+          </p>
+          <p>
+            My approach combines technical excellence with a deep understanding
+            of user needs, ensuring that every project I touch is not only
+            functional but also intuitive and delightful to use.
+          </p>
+        </div>
+      </section>
+      <!-- <h1>This is an example website</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+        odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+        quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+        mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+        Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
+        sodales ligula in libero. Sed dignissim lacinia nunc.
+      </p> -->
     </main>
-</body>
+  </body>
 </html>
