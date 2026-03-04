@@ -136,12 +136,15 @@ main {
     color: var(--background-color);
     outline: transparent;
   }
+  
 
   .header-buttons .my-work-btn:hover {
     background-color: transparent;
     color: var(--text-color);
     outline: 2px solid var(--primary-color);
     font-weight: 500;
+    transform: scale(120%);
+    box-shadow: 0 0 15px var(--primary-color);
   }
 
   .header-buttons .contact-btn {
@@ -154,6 +157,8 @@ main {
     color: var(--text-color);
     outline: 2px solid var(--primary-color);
     font-weight: 500;
+    transform: scale(120%);
+    box-shadow: 0 0 15px var(--primary-color);
   }
 
   figure {
@@ -166,7 +171,7 @@ main {
   }
 
   figure img {
-    width: 450px;
+    width: 400px;
     height: auto;
     object-fit: cover;  
     outline: 10px solid var(--secondary-color);
@@ -193,10 +198,13 @@ main {
     }
   }
 
+section {
+  padding: 50px 25px;
+}
+
 
 /* > About me Section */
 section.about-me {
-  padding: 50px 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
@@ -205,7 +213,8 @@ section.about-me {
 section .metrics {
   display: grid;
   gap: 30px;
-  /* padding: 0 10px; */
+  /* width: 300px; */
+  justify-self: center;
   grid-template-columns: 1fr 1fr;
 }
 section .metrics div {
@@ -252,18 +261,18 @@ section .about-info {
   justify-content: center;
 }
 
-section .about-info h2 {
+section h2 {
   font-family: var(--font-impact);
   font-size: 1.2rem;
   color: var(--primary-color);
 }
 
-section .about-info h3 {
+section h3 {
   font-family: var(--font-primary);
   font-size: 2rem;
   color: var(--text-color);
   line-height: 35px;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 section .about-info p {
@@ -287,6 +296,10 @@ section .about-info p {
     margin-top: -10px;
     padding: 0 100px;
   }
+
+  section h2, section h3 {
+    text-align: center;
+  }
 }
 @media (max-width: 900px) {
   section .metrics {
@@ -297,3 +310,106 @@ section .about-info p {
     padding: 0;
   }
 }
+
+/* > Skills Section */
+section.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+section.skills h3 {
+  margin-top: 10px;
+}
+
+.skills .skills-container {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  width: 100%;
+}
+
+.skills-container div h4 {
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.skills-container div h4 img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.skills-container .hard-skills, .skills-container .soft-skills {
+  background-color: var(--secondary-color);
+  outline: 2px solid var(--border-color);
+  border-radius: 5px;
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 20px;
+}
+
+.skills-container .hard-skills ul, .skills-container .soft-skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 15px;
+  margin: 15px 0 10px;
+}
+
+.skills-container .hard-skills li, .skills-container .soft-skills li {
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+  padding: 7px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.skills-container .hard-skills li {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.skills-container .soft-skills li {
+  background-color: var(--tertiary-color);
+  color: var(--text-color); 
+}
+
+.skills-container .hard-skills li:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  outline: 2px solid var(--primary-color);
+  transform: scale(110%);
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.skills-container .soft-skills li:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  outline: 2px solid var(--primary-color);
+  transform: scale(110%);
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+@media (max-width: 1100px) {
+  section.skills .skills-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills-container li {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  } 
+}
+
+/* > Featured Projects */
