@@ -40,7 +40,7 @@ main {
   margin-top: 20px;
   padding: 20px;
   /* background: #fff; */
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: 1300px;}
   main h1 {
@@ -163,7 +163,6 @@ main {
   }
 
   figure {
-    /* border: 3px solid turquoise; */
     display: flex;               
     justify-content: center;    
     align-items: center;
@@ -409,7 +408,7 @@ section.skills h3 {
   }
   .skills-container li {
     font-size: 0.8rem;
-    padding: 5px 8px;
+    /* padding: 5px 8px; */
   } 
 }
 
@@ -560,5 +559,196 @@ section.featured-projects {
   }
   .projects-headline {
     text-align: center;
+  }
+}
+
+/* > Connect Section */
+section.connect {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.connect .connect-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.connect .connect-info p {
+  font-family: var(--font-secondary);
+  font-size: 1.05rem;
+  color: var(--text-color-tertiary);
+  line-height: 30px;
+}
+
+.connect-info .contact-medium {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-content: center;
+}
+
+.contact-medium .img-medium {
+  padding: 0px 10px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  display: flex;
+  /* transition: all 0.3s ease; */
+}
+
+.contact-medium .img-medium img {
+  align-self: center;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.contact-medium .medium-info h4 {
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+  color: var(--text-color-secondary);
+}
+
+.contact-medium .medium-info a {
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.contact-medium .medium-info a:hover {
+  font-weight: 900;
+}
+
+form.send-message-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin: 0 25px;
+}
+
+.send-message-form .name-email {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.name-email .name-input, .name-email .email-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 20px;
+  width: 100%;
+}
+
+.name-email .name-input label, .name-email .email-input label {
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color-secondary);
+}
+
+.name-email .name-input input, .name-email .email-input input {
+  padding: 12px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--background-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: var(--text-color);
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.name-email .name-input input::placeholder, .name-email .email-input input::placeholder {
+  color: var(--text-color-tertiary);
+}
+
+.send-message-form .message-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.send-message-form .message-input label {
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color-secondary);
+}
+
+.send-message-form .message-input textarea {
+  padding: 12px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--background-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: var(--text-color);
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  resize: none;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.send-message-form .message-input textarea::placeholder {
+  color: var(--text-color-tertiary);
+}
+
+.name-input input:focus, .email-input input:focus, .message-input textarea:focus {
+  outline: 2px solid var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.send-message-form button {
+  align-self: center;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.send-message-form button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  outline: 2px solid var(--primary-color);
+  transform: scale(105%);
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+@media (max-width: 900px) {
+  section.connect {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  section.connect .connect-info h2 {
+    text-align: center;
+  }
+  form.send-message-form {
+    margin: 0 10px;
+    padding: 20px;
+  }
+  .contact-medium .medium-info a {
+    font-size: 0.9rem;
+  }
+  .send-message-form .name-email {
+    flex-direction: column;
+    gap: 15px;
   }
 }
