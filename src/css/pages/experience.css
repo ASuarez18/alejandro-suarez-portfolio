@@ -19,12 +19,12 @@ h1 span {
 main {
   display: flex;
   flex-direction: row;
-  /* gap: 75px; */
   padding: 0 25px;
   justify-content: space-between;
   margin-bottom: 60px;
 }
 
+/* > Professional Journey */
 .professional-journey{
   display: flex;
   flex-direction: column;
@@ -35,7 +35,6 @@ main {
   font-family: var(--font-primary);
   font-size: 1.7rem;
   color: var(--text-color);
-  margin-bottom: 15px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -114,7 +113,6 @@ main {
   font-family: var(--font-secondary);
   font-size: 1rem;
   color: var(--text-color-tertiary);
-  /* margin-top: 5px; */
 }
 
 /* > Skills and education  */
@@ -137,7 +135,6 @@ main {
   font-family: var(--font-primary);
   font-size: 1.5rem;
   color: var(--text-color);
-  margin-bottom: 15px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -191,13 +188,7 @@ main {
   margin-top: 0px;
 }
 
-.soft-skills h2 {
-  margin-bottom: 0px;
-}
-
 .soft-skills .skills-list {
-  /* background-color: var(--secondary-color); */
-  /* outline: 2px solid var(--border-color); */
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -231,10 +222,10 @@ main {
   gap: 15px;
 }
 
+
 .skills-education .education .education-item {
   display: flex;
   flex-direction: column;
-  /* gap: 5px; */
   background-color: var(--secondary-color);
   padding: 20px;
   border-radius: 10px;
