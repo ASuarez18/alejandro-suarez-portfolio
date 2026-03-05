@@ -32,6 +32,8 @@ body {
   background-color: var(--background-color);
   line-height: 1.6;
   color: var(--text-color);
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -39,10 +41,8 @@ body {
 main {
   margin-top: 20px;
   padding: 20px;
-  /* background: #fff; */
-  /* border-radius: 5px; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: 1300px;}
+  }
   main h1 {
     margin-bottom: 20px;
     font-size: 24px;
@@ -167,16 +167,23 @@ main {
     justify-content: center;    
     align-items: center;
     padding: 0px 100px;
-
+    transition: all 0.3s ease;
   }
-
+  
   figure img {
     width: 400px;
     height: auto;
     object-fit: cover;  
-    outline: 10px solid var(--secondary-color);
+    outline: 5px solid var(--secondary-color);
     border-radius: 25px;
     align-self: center;
+    transition: all 0.3s ease;
+  }
+  
+  figure img:hover {
+    transform: scale(110%);
+    outline: 5px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
   }
 
   @media (max-width: 1000px) {
@@ -752,3 +759,4 @@ form.send-message-form {
     gap: 15px;
   }
 }
+
