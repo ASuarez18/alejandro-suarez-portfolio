@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Fira+Code:wght@300..700&family=Tektur:wght@400..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'utilities.css';
 
 *, *::before, *::after {
   margin: 0;
