@@ -64,6 +64,13 @@ main {
       font-size: 14px;
     }
   }
+
+  hr {
+    border: none;
+    border-top: 4px solid var(--border-color);
+    border-radius: 5px;
+    /* margin: 40px 0; */
+  }
   
   /* > Header */
   header {
@@ -83,6 +90,8 @@ main {
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 5px;
+    /* ! Possible delete */
+    animation: pulse 2s infinite;
   }
 
   .heartbeat {
@@ -120,8 +129,9 @@ main {
     align-items: center;
   }
 
-  .header-buttons button {
+  .header-buttons a {
     font-family: var(--font-secondary);
+    text-decoration: none;
     border: none;
     margin-right: 1rem;
     padding: 10px;
@@ -603,6 +613,19 @@ section.connect {
   border-radius: 10px;
   display: flex;
   /* transition: all 0.3s ease; */
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(118, 74, 213, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 5px rgba(118, 74, 213, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(118, 74, 213, 0);
+  }
 }
 
 .contact-medium .img-medium img {
