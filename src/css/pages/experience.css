@@ -9,7 +9,7 @@ h1 {
 h1 span {
   color: var(--primary-color);
 }
-  header p {
+header p {
   font-family: var(--font-secondary);
   font-size: 1.1rem;
   color: var(--text-color);
@@ -260,6 +260,9 @@ main {
 }
 
 @media (max-width: 900px) {
+  header p {
+    text-align: center;
+  }
   main {
     flex-direction: column;
     gap: 30px;
@@ -268,4 +271,12 @@ main {
     width: 100%;
     padding: 0 20px;
   }
+}
+
+@media (max-width: 600px) {
+  header h1{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
 }
