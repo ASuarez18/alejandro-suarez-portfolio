@@ -126,11 +126,6 @@ section.get-in-touch {
   /* transition: all 0.3s ease; */
 }
 
-/* section.get-in-touch:hover {
-  background-color: var(--primary-color);
-  color: var(--background-color);
-  box-shadow: 0 4px 15px var(--primary-color);
-} */
 
 section.get-in-touch h2 {
   font-family: var(--font-impact);
@@ -142,6 +137,12 @@ section.get-in-touch p {
   font-family: var(--font-secondary);
   font-size: 1rem;
   color: var(--text-color-secondary);
+}
+
+section .get-in-touch-buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
 
 section.get-in-touch a {
@@ -188,5 +189,12 @@ section.get-in-touch a:hover {
   
   section.get-in-touch {
     margin: 30px 20px 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  section .get-in-touch-buttons {
+    flex-direction: column;
+    gap: 20px;
   }
 }
